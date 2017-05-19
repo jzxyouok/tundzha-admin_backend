@@ -10,6 +10,7 @@ return [
     'id' => 'app-api',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'api\controllers',
+    'language' => 'zh-CN',
     'bootstrap' => ['log'],
     'modules' => [
         'v1' => [
@@ -55,6 +56,16 @@ return [
             'showScriptName' => false,
             'rules' => [
             ],
+        ],
+        'i18n' => [
+            'translations' => [
+                'common' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'fileMap' => [
+                        'common' =>  'common.php',
+                    ],
+                ],
+            ]
         ],
     ],
     'params' => $params,

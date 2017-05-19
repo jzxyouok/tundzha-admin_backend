@@ -4,7 +4,7 @@
 /* @var $name string */
 /* @var $message string */
 /* @var $exception Exception */
-
+use Yii;
 use yii\helpers\Html;
 
 $this->title = $name;
@@ -18,10 +18,10 @@ $this->title = $name;
     </div>
 
     <p>
-        The above error occurred while the Web server was processing your request.
+        <?= Yii::t('common', 'The above error occurred while the Web server was processing your request.') ?>
     </p>
     <p>
-        Please contact us if you think this is a server error. Thank you.
+        <?= Yii::t('common', 'Please contact us if you think this is a server error. Thank you.') ?>
     </p>
 
 </div>
